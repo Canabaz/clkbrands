@@ -1,0 +1,235 @@
+# Site settings
+baseurl = "https://clkbrands.com"
+languageCode = "en-us"
+title = "Agency"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Your name"
+  description = "Your description"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://clkbrands.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "S.M. Brands"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    services = "Our Principles"
+    portfolio = "Portfolio"
+    about = "How We Work"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Advance Your Brand's Mission Via..."
+    subtitle = "Lean social media engagements"
+    buttonText = "Tell me How"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Core Principle"
+    subtitle = "Engineer Successful Brands by Building, Measuring, Learning."
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-code"
+      title = "Build"
+      description = "We build and deploy quality social media contents that are aligned with your brand's vision.  Then we setup meaningful metrics that reflect your audiences' opinion of the deployed contents."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-bar-chart"
+      title = "Measure"
+      description = "Your audiences' feedback is the true measurement of any marketing, sales, and/or branding campaign. Their feedback is also the best way to assess the decision to continue or pivot."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-sliders"
+      title = "Learn"
+      description = "Of course we have initial assumptions about effective marketing strategies.  However, we optimize that strategy throughout by learning and adjusting based on the measurements from media engagements."
+      url = "#"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Portfolio"
+    subtitle = "These are some of the brands that have benefited from our expertise"
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "How We Work"
+    subtitle = "We Exist to Improve Companies' Brand Everyday, Through Social Means"
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "First11.png"
+      date = "First"
+      title = "Identify Your Brand and Audience Identity"
+      description = "During our intitial meet, we will colaborate to identify why your company exists.  As it turns out, your deepest reasons for providing a service is the most important factor in identifying your core audience - The people we're after." 
+
+    [[params.about.events]]
+      img = "stratcont12.png"
+      date = "Second"
+      title = "Organize Strategic Brand Content"
+      description = "The desire to grow, increase sales, increase brand awareness, or a combination of all three factors will guide the content that we create and deploy for you.  Your strategic decision here can be revisited anytime during our relationship."
+
+    [[params.about.events]]
+      img = "bml11.png"
+      date = "Third"
+      title = "Build, Measure, Learn"
+      description = "We build quality contents that implements your strategy and targets your audience.  Then we cycle through an iterative process of Measuring the outcome of our efforts, learning from the measurements and assumptions, then building again."
+
+    [[params.about.events]]
+      img = "Scale12.png"
+      date = "Fourth"
+      title = "Scale for Massive Sale"
+      description = "When you've found a winning formula to generate predictable sales numbers, the only thing left to do is to scale.  Scaling introduces many factors that affect the first 3 steps, this is why our proffesionals work so diligently to get it right."
+
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = "Fill out the form below to realize the miracle of social media marketing"
+    buttonText = "Send message"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "your@email.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "Privacy Policy"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "#"
