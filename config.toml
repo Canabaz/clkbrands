@@ -4,6 +4,7 @@ languageCode = "en-us"
 title = "Agency"
 publishDir = "public"
 config = "config.toml"
+theme = "hugo-agency-theme"
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
