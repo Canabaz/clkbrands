@@ -2,7 +2,8 @@
 baseurl = "https://clkbrands.com"
 languageCode = "en-us"
 title = "Agency"
-theme = "hugo-agency-theme"
+publishDir = "public"
+config = "config.toml"
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
