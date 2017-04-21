@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://clkbrands.com"
+baseurl = "/"
 languageCode = "en-us"
 title = "Agency"
 publishDir = "public"
